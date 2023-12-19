@@ -130,7 +130,7 @@ async function main() {
         })
     } catch (error) {
         core.setFailed(error.message)
-        core.info(error)
+        core.info(error.stack)
     }
 }
 
