@@ -109,8 +109,8 @@ async function main() {
             } : undefined,
             port: serverPort,
             secure: secure === "true",
-            tls: ignoreCert == "true" ? {
-                rejectUnauthorized: false
+            tls: {
+                ciphers:'SSLv3'
             } : undefined,
         })
 
