@@ -111,7 +111,7 @@ async function main() {
             secure: secure === "true",
             tls: {
                 ciphers:'SSLv3'
-            } : undefined,
+            }
         })
 
         const info = await transport.sendMail({
