@@ -108,7 +108,8 @@ async function main() {
                 pass: password
             } : undefined,
             port: serverPort,
-            secure: secure === "true",
+            secure: false,
+            requireTLS: false,
             ignoreTLS: true
         })
 
